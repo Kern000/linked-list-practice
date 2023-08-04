@@ -1,3 +1,10 @@
+// SOLID PRINCIPLE //
+// Single Responsibility - linkedList class will only contain linkedList functionality - CRUD
+// Open-Closed Principle - open for extension, linked list only allow values passed in and updated, but not modify its functionalities, nature, and behavior
+// Liskov substitution - linked List fails Node's Liskov substitution, thus it does not extend as a subordinate class. Instead, when applying, will import both and initialize new instances for both.
+// Interface Segregation - not applicable, class only provides basic functionality to interact with linked list
+// Dependency Inversion - no dependency of Node on linked List, no circular dependency.
+
 const Node = require('./node');
 
 class LinkedList {
